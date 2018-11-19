@@ -2,8 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/id_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        />
+
+    <item
         android:id="@+id/menu_refresh"
         android:title="Refresh"
         android:icon="@drawable/ic_autorenew_black_24dp"
         app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/now_playing"
+        android:title="Now Playing Movies" />
+    <item
+        android:id="@+id/up_coming"
+        android:title="Upcoming Movies" />
 </menu>

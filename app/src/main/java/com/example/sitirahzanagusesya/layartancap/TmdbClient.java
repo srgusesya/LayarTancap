@@ -7,6 +7,9 @@ import retrofit2.http.Query;
     public interface TmdbClient{
 
         @GET("/3/movie/now_playing")
-        Call<MovieList> getMovies(@Query("api_key") String api_key);
+        Call<MovieList> getNowPlayingMovies(@Query("api_key") String api_key);
+
+        @GET("/3/movie/upcoming")
+        Call<MovieList> getUpComingMovies(@Query("api_key") String api_key);
     }
 
